@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mandarin Oriental </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css">
+        <!-- javascript-->
+       
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <link rel = "icon" href = "ankit" type = "image/png">
+        <!--end of javascript-->
+    </head>
+    <body>
+        
+        <!-- header -->
+        <header class = "header" id = "header">
+            <div class = "head-top">
+                <div class = "site-name">
+                    <span>ANKIT</span>
+                </div>
+                <div class = "site-nav">
+                    <span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span>
+                </div>
+            </div>
+
+            <div class = "head-bottom flex">
+                <h2>NICE AND COMFORTABLE PLACE TO STAY</h2>
+                <p>The company itself is a very successful company. It is just that those who are pardoned never hinder pleasures, we accuse them of harsher sayings, of choosing, or as they happen, the modes of these annoyances and the smallest duties born.</p>
+                <button type = "button" class = "head-btn">GET STARTED</button>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- side navbar -->
+        <div class = "sidenav" id = "sidenav">
+            <span class = "cancel-btn" id = "cancel-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+
+            <ul class = "navbar">
+                <li><a href = "#header">home</a></li>
+                <li><a href = "#services">services</a></li>
+                <li><a href = "#rooms">rooms</a></li>
+                <li><a href = "#customers">customers</a></li>
+            </ul>
+        </div>
+        <!-- end of side navbar -->
+
+        <!-- fullscreen modal -->
+        <div id = "modal"></div>
+        <!-- end of fullscreen modal -->
+
+        <!-- body content  -->
+        <section class = "services sec-width" id = "services">
+            <div class = "title">
+                <h2>services</h2>
+            </div>
+            <div class = "services-container">
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-utensils"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Food Service/ Food Runner</h2>
+                        <p>The food and beverage service is part of the service-oriented hospitality sector. It can be a part of a large hotel or tourism business and it can also be run as an independent business. The members of the F&B Services team are required to perform a wide range of tasks which include preparation for service, greeting the guests, taking their orders, settling the bills, and performing various other tasks after the guests leave.</p>
+                        <a href="html/service.html">
+                        <button type = "button" class = "btn">Know More</button>
+                        </a>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-swimming-pool"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Refreshment</h2>
+                        <p>The Unwind with a refreshing meal at Aquarius, the poolside restaurant in Mumbai; and visit the stylish Harbour Bar. Signature experiences such as the afternoon tea</p>
+                        <a href="html/refreshment.html"><button type = "button" class = "btn">Know More</button>
+                    </a>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-broom"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Housekeeping</h2>
+                        <p>The Housekeeping department in hotel ensures the cleanliness, maintenance, and aesthetic appeal of all rooms and public areas. The housekeeping department not only turnarounds (prepares and clean guestrooms) on a timely manner it also cleans and maintains everything in the hotel so that the property is as fresh and attractive similar to the day when it opened the doors for the business.</p>
+                        <a href="html/housekeeping.html"><button type = "button" class = "btn">Know More</button></a>
+
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-door-closed"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Room Security</h2>
+                        <p>Hotel guest room security may be enhanced by the use of security equipment such as hotel/motel function locks, safety chains, and similar devices.
+                            Secondary access limiting devices on sliding glass, balcony, and connecting room doors, access limiting devices for operational windows, a guest room telephone or another communication device available for use 24 hours a day, a peephole in or window next to the guest room door etc.</p>
+                        <a href="html/security.html"><button type = "button" class = "btn">Know More</button></a>
+                    </div>
+                </article>
+                <!-- end of single service -->
+            </div>
+        </section>
+
+        <div class = "book">
+            <form class = "book-form" id="form"  >
+                <div class = "form-item">
+                    <label for = "Your Name">Your Name: </label>
+                    <input type = "Your Name" id = "Your Name">
+                </div>
+                
+                <div class = "form-item">
+                    <label for = "Your Email">Your Email/Mobile No: </label>
+                    <input type = "Your Email" id = "Your Email">
+                </div>
+                <div class = "form-item">
+                    <label for = "checkin-date">Check In Date: </label>
+                    <input type = "date" id = "chekin-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "checkout-date">Check Out Date: </label>
+                    <input type = "date" id = "chekout-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "adult">Adults: </label>
+                    <input type = "number" min = "1" value = "1" id = "adult">
+                </div>
+                <div class = "form-item">
+                    <label for = "children">Children: </label>
+                    <input type = "number" min = "1" value = "1" id = "children">
+                </div>
+                <div class = "form-item">
+                    <label for = "rooms">Rooms: </label>
+                    <input type = "number" min = "1" value = "1" id = "rooms">
+                </div>
+                <div class = "form-item">
+                    <input type = "submit" class = "btn" value = "Book Now" id="submit">
+                </div>
+            </form>
+        </div>
+
+         <!-- Show Content from localstorage -->
+      
+
+        <!-- end  -->
+
+        <section class = "rooms sec-width" id = "rooms">
+            <div class = "title">
+                <h2>rooms</h2>
+            </div>
+            <div class = "rooms-container">
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "https://www.vayaresorts.com/wp-content/uploads/2021/06/dsf0246-1.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Standard Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                The customer is very happy.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                The customer is very happy.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                The customer is very happy.
+                            </li>
+                        </ul>
+                        <p>our most economical, are perfect for guests satisfied with a compact room and window opening onto a light well.Basic rooms are also compact but slightly larger than a budget, with a window that provides a limited view.</p>
+                        <p>Standard rooms are more spacious and offer a city view for example. In so far as budget, basic and standard rooms are compact so are the bathroom facilities. The sink is in-room with toilet & shower separately enclosed.</p>
+                        <p class = "rate">
+                            <span> ₹900 /</span> Per Night
+                        </p>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "https://images.livspace-cdn.com/w:1024/h:790/plain/https://jumanji.livspace-cdn.com/magazine/wp-content/uploads/sites/2/2022/05/10190524/Cover-03-1.png" alt = "room image">
+                    </div>
+
+                    <div class = "room-text">
+                        <h3>Luxury Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                The customer is very happy.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                The customer is very happy.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                The customer is very happy.
+                            </li>
+                        </ul>
+                        <p> Luxury room is spacious provided with sofa's, Writing table with chair,most modern wardrobe,dressing area,bath room fitted with bath tubs.</p>
+                        <p> our guest rooms feature private bathrooms, cable television, telephone, and WiFi. If a guest has multiple pieces of luggage and would find it convenient to have surplus luggage out of the room, will place it in storage.</p>
+                        <p class = "rate">
+                            <span>₹1200 /</span> Per Night
+                        </p>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "https://hips.hearstapps.com/bpc.h-cdn.co/assets/18/03/1600x800/landscape-1516299055-presidential-cape-town.jpg?resize=980:*" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Delux Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                The customer is very happy.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                The customer is very happy.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                The customer is very happy.
+                            </li>
+                        </ul>
+                        <p>Deluxe  King, and Quad rooms are more comparable in size to a modern day hotel room, offering a city view & full sized bathroom, many with a bathtub & shower.</p>
+                        <p> deluxe rooms are carpeted with wooden floor the back side facing lush green lawns & Apple orchard of the hotel also having scenic view of lusg green forests.</p>
+                        <p class = "rate">
+                            <span>₹2800 /</span> Per Night
+                        </p>
+                    </div>
+                </article>
+                <!-- end of single room -->
+            </div>            </div>
+        </section>
+
+
+        <section class = "customers" id = "customers">
+            <div class = "sec-width">
+                <div class = "title">
+                    <h2>customers</h2>
+                </div>
+                <div class = "customers-container">
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>We Loved it</h3>
+                        <p>The company itself is a very successful company. Let him seek the blessed truth, and see that the forgiveness of the present is with a just distinction;</p>
+                        <img src = "https://miro.medium.com/max/1400/1*ZH-CTLKJK_HH9CmuLEJmUg.jpeg "customer image">
+                        <span>Customer Name, Country</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Comfortable Living</h3>
+                        <p>The company itself is a very successful company. Let him seek the blessed truth, and see that the forgiveness of the present is with a just distinction.</p>
+                        <img src = "https://www.howtogeek.com/wp-content/uploads/2021/05/businessman-in-hotel.jpg?width=1198&trim=1,1&bg-color=000&pad=1,1" alt = "customer image">
+                        <span>Customer Name, Country</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Nice Place</h3>
+                        <p>The company itself is a very successful company. Let him seek the blessed truth, and see that the forgiveness of the present is with a just distinction.</p>
+                        <img src = "https://img.traveltriangle.com/blog/wp-content/uploads/2020/02/cover-Hotels-Near-Trivandrum.jpg" alt = "customer image">
+                        <span>Customer Name, Country</span>
+                    </div>
+                    <!-- end of single customer -->
+                </div>
+            </div>
+        </section>
+        <!-- end of body content -->
+
+       
+
+        
+        <!-- footer -->
+        <footer class = "footer">
+            <div class = "footer-container">
+                <div>
+                    <h2>About Us </h2>
+                    <p>The company itself is a very successful company. And so they provide a wise resilience to pains? Guilt hinders them from anything or suffering.</p>
+                    <ul class = "social-icons">
+                        <li class = "flex">
+                            <a href="https://www.facebook.com/"><i class = "fa fa-facebook fa-2x"></i></a>
+                        </li>
+                        <li class = "flex">
+                               <a href="https://www.instagram.com/"><i class = "fa fa-instagram fa-2x"></i></a>
+                        </li>
+                        <li class = "flex">
+                            <a href="https://twitter.com/i/flow/login"></a><i class = "fa fa-twitter fa-2x"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Useful Links</h2>
+                    <a href = "html/blog.html">Blog</a>
+                    <a href = "#">Rooms</a>
+                    <a href = "#">Subscription</a>
+                    <a href = "#">Gift Card</a>
+                </div>
+
+                <div>
+                    <h2>Privacy</h2>
+                    <a href = "#">Career</a>
+                    <a href = "html/AboutUS.html">About Us</a>
+                    <a href = "html/contact.html">Contact Us</a>
+                    <a href = "#">Services</a>
+                </div>
+
+                <div>
+                    <h2>Have A Question</h2>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            203 Vaksai Naka Old Mumbai Pune Highway,Lonavala - 410 401
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span>
+                            +918450934492
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span>
+                            @mandarinorientalhotel groups.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <h3 class="credit"> created by <span> mr. ANKIT SINGH </span> | all rights reserved! </h1>
+        </footer>
+        <!-- end of footer -->
+        <script src="js/script.js"></script>
+    </body>
+</html>
+        </section>

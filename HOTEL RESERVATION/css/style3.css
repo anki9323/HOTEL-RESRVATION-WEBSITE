@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+:root{
+    --transition: all 0.7s ease;
+    --yellow: #a2840b;
+    --dark: #3a3a34;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    line-height: 1.6;
+}
+.btn{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 140px;
+    display: block;
+    margin: 15px auto;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.btn:hover{
+    opacity: 0.85;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1, h2, h3, h4, h5, h6{
+    padding: 8px 0;
+}
+img{
+    width: 100%;
+    display: block;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    background-color: #e0e5eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper{
+    margin: 20px;
+    box-shadow: 0 0 14px -1px rgba(145, 145, 145, 0.75);
+}
+.text{
+    font-weight: 300;
+    opacity: 0.9;
+    max-width: 480px;
+    line-height: 1.6;
+}
+.wrapper h2{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+.content-left{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('https://www.rhtlawasia.com/wp-content/uploads/2022/04/You-are-just-a-security-guard.jpg') center/cover no-repeat;
+    min-height: 100vh;
+    padding: 30px;
+    color: #fff;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    place-content: center;
+    outline: 2px solid rgba(255, 255, 255, 0.7);
+    outline-offset: -20px;
+}
+.content-left h1{
+    font-size: 60px;
+    text-shadow: 5px 10px 5px rgba(0, 0, 0, 0.4);
+    margin-bottom: 12px;
+}
+.content-right-top, .content-right-bottom{
+    display: grid;
+}
+.content-right-top .content-img{
+    background: url('https://www.wisebread.com/files/fruganomics/imagecache/605x340/blog-images/couple-hotel-check-in-484378693-small.jpg') center/cover no-repeat;
+    height: 400px;
+}
+.content-right-bottom .content-img{
+    background: url('https://unitsecurity.co.uk/wp-content/uploads/2020/06/hotel-2-800x400.jpg') center/cover no-repeat;
+    height: 400px;
+}
+.content-text{
+    color: #555c66;
+    background-color: #fff;
+    padding: 30px;
+    display: grid;
+    place-content: center;
+    place-items: start;
+}
+.content-text h2{
+    margin-bottom: 12px;
+}
+.content-text a{
+    margin-top: 20px;
+    background-color: #fba31e;
+    color: #fff;
+    text-decoration: none;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 40px 0 20px;
+    position: relative;
+    transition: background-color 0.3s ease-in-out;
+}
+.content-text a:hover{
+    background-color: #555c66;
+}
+.content-text a::after{
+    position: absolute;
+    content: "";
+    right: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid #fff;
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+}
+
+@media screen and (min-width: 768px){
+    .wrapper{
+        margin: 40px;
+    }
+    .content-right-top, .content-right-bottom{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .content-right-bottom .content-img{
+        order: 1;
+    }
+    .content-right-bottom .content-text{
+        order: 2;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+/* footer */
+.footer{
+    background: var(--dark);
+    color: #fff;
+    text-align: center;
+}
+.footer-container{
+    width: 85vw;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.footer-container p, .footer-container a, .footer-container span{
+    opacity: 0.8;
+}
+.footer a{
+    display: block;
+    color: rgb(221, 226, 203);
+    text-decoration: none;
+}
+.social-icons{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+.social-icons li {
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+    background: #1c181c;
+    border-radius: 50%;
+    transition: var(--transition);
+    cursor: pointer;
+}
+.social-icons li:hover{
+    background: rgb(223, 31, 76);
+    color: #e266c5;
+}
+.contact-item span{
+    display: block;
+}
+@media(min-width: 900px){
+    .footer-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+}
+@media(min-width: 1170px){
+    .footer{
+        text-align: left;
+    }
+    .footer-container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .footer-container div:nth-child(1) p{
+        padding-right: 20px;
+    }
+    .contact-item{
+        display: grid;
+        grid-template-columns: 10% 90%;
+        margin-bottom: 15px;
+        align-items: center;
+    }
+}
+
+.showModal{
+    position: fixed;
+    background: transparent;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+}

@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+:root{
+    --transition: all 0.7s ease;
+    --yellow: #a2840b;
+    --dark: #3a3a34;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Playfair Display', serif;}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .3s linear; 
+    text-decoration: none;
+    text-transform: capitalize;
+    outline: none;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.header{
+    padding: 2rem 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-shadow: 0 .5rem .5rem rgb(0, 0, 0, .1);
+  
+}
+.header #logo img{
+    width: 80px;
+}
+.header .navbar a{
+    font-size: 1.7rem;
+    margin-left: 1.5rem;
+    color: var(--maincolor);
+
+}
+.header .navbar a:hover{
+   color: black;
+}
+.header .icons{
+    font-size: 2rem;
+   
+}
+
+.header .icons div{
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.header .icons div:hover{
+    color: var(--maincolor);
+}
+.header .icons #menu-bars{
+    display: none;
+}
+.header .search-box{
+    position: absolute;
+    top: 110%;
+    right: 100%;
+    width: 50%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.header .search-box input{
+    padding: 1.5rem;
+    border-radius: 15px;
+    width: 100%;
+    border: none;
+}
+.header .search-box.active{
+    right: 2rem;
+}
+.header .navbar.active{
+    left: 0;
+}
+
+.main-background{
+    background: url(https://i.gifer.com/3N4k.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.main-text{
+    text-align: center;
+}
+.main-text h2{
+    color: white;
+    font-size: 30px;
+}
+.main-text h1{
+    color: white;
+    font-size: 38px;
+}
+.main-text h1 span{
+    color: var(--maincolor);
+} 
+.book-section{
+    padding: 2rem 7%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-book{
+    width: 100%;
+    background: black;
+    display: flex;
+  flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.inner-book input{
+    padding: 1rem 2rem;
+    margin: .5rem 0;
+
+}
+.book-btn{
+    padding: 1.1rem 2rem;
+    background: var(--maincolor);
+
+}
+.book-btn a{
+    color: white;
+    font-size: 1.5rem;
+}
+.main-hotel{
+    padding: 2rem 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.award-winning-hotel h1{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    padding: 2rem ;
+}
+.award-winning-hotel h1 span{
+    color: var(--maincolor);
+}
+.inner-award{
+    flex: 1 1 300px;
+}
+.inner-award h2,p{
+    text-align: center;
+}
+.inner-award h2{
+    font-size: 30px;
+    padding: 1rem;
+}
+.inner-award p{
+    font-size: 1.7rem;
+    padding: 2rem;
+}
+.inner-award img{
+    width: 100%;
+}
+.our-rooms{
+    padding: 2rem 7%;
+
+}
+.our-rooms h1{
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 2rem;
+}
+.our-rooms h1 span{
+    color: var(--maincolor);
+}
+.inner-rooms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.inner-rooms .room-box{
+    flex: 1 1 300px;
+}
+.inner-rooms .room-box img{
+    width: 100%;
+    padding: 1rem;
+}
+.inner-rooms .room-box .beds{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+}
+.inner-rooms .room-box .beds span{
+    font-size: 1.7rem;
+}
+.inner-rooms .room-box .beds i{
+    font-size: 2rem;
+    color: var(--maincolor);
+    cursor: pointer;
+}
+.book-room-btn{
+    width: 50%;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+    border: 1px solid var(--maincolor);
+    text-align: center;
+}
+.book-room-btn:hover{
+    color: white;
+    background: var(--maincolor);
+}
+.book-room-btn a{
+    color: black;
+    font-size: 1.7rem;
+}
+.book-room-btn a:hover{
+    color: white;
+}
+.second-background{
+    background: url(imgaes/secondback.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second-background{
+    text-align: center;
+    
+}
+.second-background h1{
+    font-size: 60px;
+    color: white;
+}
+.second-background h2{
+    color: var(--maincolor);
+    font-size: 35px;
+}
+.gallery{
+    padding: 2rem 7%;
+
+}
+.gallery h1{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    padding: 2rem;
+}
+.gallery h1 span{
+    color: var(--maincolor);
+}
+.main-gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.inner-gallery img{
+    width: 100%;
+}
+/* footer */
+.footer{
+    background: var(--dark);
+    color: rgb(7, 9, 9);
+    text-align: center;
+}
+.footer-container{
+    width: 85vw;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.footer-container p, .footer-container a, .footer-container span{
+    opacity: 0.8;
+}
+.footer a{
+    display: block;
+    color: rgb(75, 91, 25);
+    text-decoration: none;
+}
+.social-icons{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+.social-icons li {
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+    background: #0d0b0d;
+    border-radius: 50%;
+    transition: var(--transition);
+    cursor: pointer;
+}
+.social-icons li:hover{
+    background: rgb(223, 31, 76);
+    color: #e266c5;
+}
+.contact-item span{
+    display: block;
+}
+@media(min-width: 900px){
+    .footer-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+}
+@media(min-width: 1170px){
+    .footer{
+        text-align: left;
+    }
+    .footer-container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .footer-container div:nth-child(1) p{
+        padding-right: 20px;
+    }
+    .contact-item{
+        display: grid;
+        grid-template-columns: 10% 90%;
+        margin-bottom: 15px;
+        align-items: center;
+    }
+}
